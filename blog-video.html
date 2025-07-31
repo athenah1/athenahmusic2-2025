@@ -64,6 +64,28 @@
 </iframe>
 </section>
 
+   <body>
+
+  <!-- 👇 INSERT THIS CODE HERE -->
+  <h2>Venmo Featured Video</h2>
+
+  <div id="videoPlayer">
+    <iframe id="mainVideo" src="https://your-default-video-link" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <ul>
+    <li><a href="#" onclick="changeVideo('https://your-video-link-1')">🎵 Song One Title</a></li>
+    <li><a href="#" onclick="changeVideo('https://your-video-link-2')">🎵 Song Two Title</a></li>
+  </ul>
+
+  <script>
+    function changeVideo(url) {
+      document.getElementById('mainVideo').src = url;
+    }
+  </script>
+
+  <!-- Your other content like YouTube videos goes below --> 
+
 <main>
 
      main {
@@ -256,7 +278,6 @@
       <div class="tab-buttons">
         <button class="tab-btn active" onclick="showTab(0)">Substack Videos</button>
         <button class="tab-btn" onclick="showTab(1)">YouTube</button>
-        <button class="tab-btn" onclick="showTab(2)">Vimeo</button>
       </div>
 
       <div>
